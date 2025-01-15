@@ -77,7 +77,7 @@ If NOT IsNull(registryValues) Then
 
 						'Add service to show that it doesn't exists
 						Set scomPropertyBag = scomApi.CreatePropertyBag()	' Instance of a new property bag
-						Call scomPropertyBag.AddValue("Name", serviceName")
+						Call scomPropertyBag.AddValue("Name", serviceName)
 						Call scomPropertyBag.AddValue("EntityDisplayName", serviceName & " (non existant)")
 						Call scomApi.AddItem(scomPropertyBag)	' Add the property bag to the collection
 					Case 242101
